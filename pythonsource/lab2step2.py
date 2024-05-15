@@ -52,7 +52,7 @@ def balancenet(n, edgelist, anchor):
     #  look at the getedges.m sample
 
     # 获取节点数
-    size = len(set([n for e in edgelist[:, :2] for n in e]))
+    size = n
     # size = len(edgelist)
     # 初始化邻接矩阵
     adjacency = [[0]*size for _ in range(size)]

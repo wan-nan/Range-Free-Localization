@@ -105,7 +105,7 @@ def drawconnection(nodes, edges, anchor=None):
 
     plt.xlabel('X')
     plt.ylabel('Y')
-    plt.show()
+    plt.savefig("figures/connection.png")
 
 
 def compareresults(true_loc, est_loc, anchor=None):
@@ -130,7 +130,7 @@ def compareresults(true_loc, est_loc, anchor=None):
         plt.scatter(anchor[:, 1], anchor[:, 2], 10, 'r', zorder=1)
     plt.xlabel('X')
     plt.ylabel('Y')
-    plt.show()
+    plt.savefig("figures/comparison.png")
 
 def gradientdescent(X, y, alpha, num_iters):
     '''

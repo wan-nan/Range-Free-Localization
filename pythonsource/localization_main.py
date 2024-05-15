@@ -53,7 +53,7 @@ for loops in range(iterations): #iteratively sove the balanced srping network pr
     # You should write your own program to balance the spring network using
     # graph laplacian, source code in lab2step2.py
     est_loc = balancenet(n, np.concatenate([edgelist[:, :2], edgeweight], -1), anchor)
-    
+
     # You should write your own program to adjust the weight (stiffness) of
     # edges, source code in lab2step2.py    
     edgeweight = adjustweight(est_loc, np.concatenate([edgelist[:, :2], edgeweight], -1), mrange)
